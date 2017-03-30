@@ -37,7 +37,7 @@ Setup your WiFi connection by running:
     Nerves.InterimWiFi.setup "wlan0", ssid: "my_accesspoint_name", key_mgmt: :"WPA-PSK", psk: "secret"
 
 If your WiFi network does not use a secret key, specify the `key_mgmt` to be `:NONE`.
-Currently, wireless configuration passes almost unaltered to [wpa_supplicant.ex](https://github.com/nerves-project/wpa_supplicant.ex), so see that
+Currently, wireless configuration passes almost unaltered to [wpa_supplicant.ex](https://github.com/nerves-project/nerves_wpa_supplicant), so see that
 project for more configuration options.
 
 ## Limitations
