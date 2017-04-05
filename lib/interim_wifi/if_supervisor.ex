@@ -48,7 +48,6 @@ defmodule Nerves.InterimWiFi.IFSupervisor do
   def status(ifname) do
      pidname = pname(ifname)
      if Process.whereis(pidname) do
-       # im not sure what status is needed here?
        Nerves.NetworkInterface.status(ifname)
      else
        {:error, :not_started}
