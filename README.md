@@ -33,7 +33,7 @@ Connect to WiFi networks on Nerves platforms.
 ## Setup
 Before WiFi will work, you will need to load any modules for your device if they
 aren't loaded already. Here's an example for Raspberry Pi 0 and Rasbperry Pi 3
-    `{_, 0} = System.cmd("modprobe", ["brcmac"])`
+    `{_, 0} = System.cmd("modprobe", ["brcmfmac"])`
 
 ## Scanning
 You can scan by running:
