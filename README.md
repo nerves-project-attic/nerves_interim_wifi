@@ -6,7 +6,6 @@ Connect to WiFi networks on Nerves platforms.
 
 ## Installation
 
-
 1. Add nerves_interim_wifi to your list of dependencies in `mix.exs`:
     ``` elixir
     def deps do
@@ -15,11 +14,18 @@ Connect to WiFi networks on Nerves platforms.
     ```
 
 2. Ensure nerves_interim_wifi is started before your application:
+
+### Elixir >= 1.4
+
+  Included by default through `deps`.
+
+### Elixr < 1.4
   ``` elixir
   def application do
     [applications: [:nerves_interim_wifi]]
   end
   ```
+
 
 3. Set the regulatory domain in your `config.exs`. This should be set to the
    ISO 3166-1 alpha-2 country code where the device is running. If your device
